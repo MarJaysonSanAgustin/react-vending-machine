@@ -7,7 +7,142 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  font-size: 1.1rem;
+}
+
+.title {
+  text-align: center;
+}
+
+ /* product window */
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #593531;
+  padding: 10px;
+}
+
+.col {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  text-align: center;
+}
+
+.product-stack-container {
+  width: 100px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products {
+  padding: 5px;
+  border: 1px solid brown;
+  height: 150px;
+  overflow: hidden;
+}
+
+.product-stack-container > .quantity {
+  color: black;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.product-image {
+  width: 100px;
+}
+
+.select-container {
+  height: 20px;
+  width: 100%;
+  background-color: green;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.select-container-disabled {
+  height: 20px;
+  width: 100%;
+  background-color: maroon;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: not-allowed;
+}
+
+.select-container-disabled > span {
+  font-size: 1rem;
+
+}
+
+.select-container > span {
+  font-size: 1rem;
+
+}
+
+.vending-machine-container {
+  background-color: #7c7c7c;
+  width: 570px;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 20px solid #593531;
+  padding: 10px;
+}
+
+.vending-machine {
+  display: flex;
+  flex-direction: row;
+}
+
+.coin-display {
+  width: 150px;
+}
+
+.coin-entry {
+  width: 100%;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #dfdfdf;
+  border-radius: 20px;
+  padding: 10px;
+  height: 110px;
+}
+
+.total-coins-container {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #dfdfdf;
+}
+
+.total-coins-container > p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #7c7c7c;
+}
+
+.coin-button {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid rgb(163, 163, 163);
+  background-color: #7c7c7c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
