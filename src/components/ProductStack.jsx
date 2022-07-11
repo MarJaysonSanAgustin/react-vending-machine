@@ -6,7 +6,7 @@ import useEnterCoins from "../hooks/useEnterCoins";
 function ProductStack ({ products }) {
   const { enteredCoins } = useEnterCoins();
 
-  useEffect(() => console.log(enteredCoins), [enteredCoins])
+  useEffect(() => console.log(enteredCoins), [enteredCoins]) // handle coin entry rejection
 
   const Products = products.map((product, idx) => <Product key={idx} product={product} />);
 
