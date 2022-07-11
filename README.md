@@ -2,6 +2,14 @@
 
 This project is a simple app that solves the vending machine problem
 
+## Demo
+
+https://62cb9935a341ee3eb00a8eb2--eloquent-kataifi-853ae9.netlify.app/
+
+## Screenshot
+
+![Drag Racing](./screenshot.png)
+
 ## Available Scripts (Running Locally)
 
 In the project directory, you can run:
